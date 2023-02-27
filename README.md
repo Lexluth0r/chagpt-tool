@@ -10,7 +10,7 @@ cp config.json_bk config.json
 ```
 2. 配置config文件，推荐使用 access_token 方式认证（注意access_token 会过期）。
 
-- 获取 access_token[Token](https://chat.openai.com/api/auth/session) 
+- 获取 [access_token](https://chat.openai.com/api/auth/session) 
 
 3. 构建镜像
 ```sh
