@@ -16,14 +16,6 @@ def generate_response(prompt):
         response = data["message"]
     return response
 
-@server.route("/")
-def home():
-    return render_template("chat.html")
-
-@server.route("/get")
-def get_bot_response():
-    user_text = request.args.get('msg')
-    return str(generate_response(user_text))
 
 @server.route("/api/chat",methods=['POST'])
 def get_chat_bot_response():
