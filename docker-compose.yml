@@ -1,0 +1,9 @@
+services:
+  chatgpt:
+    image: chatgpt-tool:latest
+    container_name: chagpt-toolt
+    volumes:
+      - ./config.json:/chatgpt-tool/config.json
+    ports:
+      - "9999:8088" #8088为容器内端口，不可更换；9999为外部端口，可自行更换
+    restart: always
